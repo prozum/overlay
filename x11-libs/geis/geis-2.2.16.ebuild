@@ -22,3 +22,7 @@ DEPEND="${RDEPEND}
 PYTHON_DEPEND="3:3.3"
 
 S="${WORKDIR}/geis-${PV}"
+
+src_prepare() {
+	sed -i 's/python3 >= 3.2/python-3.3/g' configure;
+}
