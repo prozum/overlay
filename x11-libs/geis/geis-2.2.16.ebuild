@@ -19,4 +19,6 @@ RDEPEND=""
 DEPEND="${RDEPEND}
 	x11-libs/grail"
 
+PYTHON_DEPEND="3:3.3"
+
 S="${WORKDIR}/geis-${PV}"
