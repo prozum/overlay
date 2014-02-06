@@ -16,6 +16,7 @@ RESTRICT="mirror"
 RDEPEND=""
 DEPEND="${RDEPEND}
     app-misc/evemu
-    x11-libs/libXi"
+    x11-libs/libXi
+	x11-base/xorg-server[dmx]"
 
 S="${WORKDIR}/frame-${PV}"
