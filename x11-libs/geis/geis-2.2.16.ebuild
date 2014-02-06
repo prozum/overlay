@@ -17,7 +17,8 @@ RESTRICT="mirror"
 
 RDEPEND=""
 DEPEND="${RDEPEND}
-	x11-libs/grail"
+	x11-libs/grail
+	x11-proto/xf86driproto"
 
 PYTHON_DEPEND="3:3.3"
 
