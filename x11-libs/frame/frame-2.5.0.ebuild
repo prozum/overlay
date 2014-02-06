@@ -6,7 +6,7 @@ EAPI=5
 
 DESCRIPTION="Touch Frame Library "
 SRC_URI="https://launchpad.net/frame/trunk/v2.5.0/+download/frame-2.5.0.tar.gz"
-HOMEPAGE="https://launchpad.net/utouch-frame"
+HOMEPAGE="https://launchpad.net/frame"
 KEYWORDS="~x86 ~amd64"
 SLOT="0"
 LICENSE="GPL-3"
