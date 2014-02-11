@@ -39,11 +39,6 @@ DEPEND="${RDEPEND}
 
 DOCS=( "readme.md" "changes.txt" )
 
-src_prepare() {
-	sh platform/unix/automagic || die
-	eautoreconf
-}
-
 src_configure() {
 	OPTS=()
 	use luajit && OPTS+=" --with-luajit"
