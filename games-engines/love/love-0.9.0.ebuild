@@ -30,7 +30,8 @@ RDEPEND="dev-games/physfs
 	media-libs/libvorbis
 	media-libs/openal
 	media-sound/mpg123
-	virtual/lua
+	dev-lang/lua[deprecated]
+	luajit? ( dev-lang/luajit:2 )
 	virtual/opengl"
 DEPEND="${RDEPEND}
 	media-libs/libmng
