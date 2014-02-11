@@ -16,7 +16,7 @@ else
 	KEYWORDS="~amd64 ~x86"
 fi;
 
-inherit games eutils autotools ${SCM_ECLASS}
+inherit eutils autotools ${SCM_ECLASS}
 
 LICENSE="ZLIB"
 SLOT="0"
