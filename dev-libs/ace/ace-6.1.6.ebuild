@@ -36,8 +36,8 @@ DEPEND="virtual/pkgconfig
 	gtk? ( x11-libs/gtk+ )
 	opengl? ( virtual/opengl )
 	openmp? ( sys-cluster/openmpi )
-	qt4? ( x11-libs/qtcore:4
-		x11-libs/qtgui:4 )
+	qt4? ( dev-qt/qtcore:4
+		dev-qt/qtgui:4 )
 	ssl? ( dev-libs/openssl )
 	stl? ( dev-libs/STLport )
 	valgrind? ( dev-util/valgrind )
