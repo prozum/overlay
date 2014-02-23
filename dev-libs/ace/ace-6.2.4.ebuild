@@ -14,7 +14,7 @@ SRC_URI="!tao? ( http://download.dre.vanderbilt.edu/previous_versions/ACE-${PV}.
 LICENSE="BSD as-is"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~x86"
-IUSE="X boost ciao dmalloc fltk fox gtk opengl openmp qt4 static-libs ssl stl tao +threads valgrind wxwidgets xt"
+IUSE="X boost ciao dmalloc fltk fox gtk opengl openmp static-libs ssl stl tao +threads valgrind wxwidgets xt"
 REQUIRED_USE="xt? ( X )"
 #SET threads USE flag to default on because disabling currently causes compilation failure with undefined reference errors.
 
@@ -36,8 +36,6 @@ DEPEND="virtual/pkgconfig
 	gtk? ( x11-libs/gtk+ )
 	opengl? ( virtual/opengl )
 	openmp? ( sys-cluster/openmpi )
-	qt4? ( dev-qt/qtcore:4
-		dev-qt/qtgui:4 )
 	ssl? ( dev-libs/openssl )
 	stl? ( dev-libs/STLport )
 	valgrind? ( dev-util/valgrind )
@@ -98,16 +96,6 @@ src_compile() {
 		myparams="${myparams} openmp=1"
 	else
 		myparams="${myparams} openmp="
-	fi
-
-	if use qt4; then
-		export QTDIR="/usr"
-		export PLATFORM_QT_CPPFLAGS="$(pkg-config QtCore QtGui --cflags)"
-		export PLATFORM_QT_LIBS="$(pkg-config QtCore QtGui --libs-only-l)"
-		export PLATFORM_QT_LDFLAGS="$(pkg-config QtCore QtGui --libs-only-L)"
-		myparams="${myparams} qt4=1"
-	else
-		myparams="${myparams} qt4="
 	fi
 
 	if use ssl; then
