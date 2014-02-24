@@ -8,7 +8,7 @@ inherit unpacker gnome2-utils
 
 DESCRIPTION="LightWorks video editor software"
 HOMEPAGE="http://www.lwks.com/"
-SRC_URI="http://www.lwks.com/dmpub/lwks-${PV}-amd64.deb"
+SRC_URI="lwks-${PV}-amd64.deb"
 
 RESTRICT="fetch mirror"
 
