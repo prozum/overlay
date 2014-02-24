@@ -6,11 +6,13 @@ EAPI=5
 
 inherit unpacker gnome2-utils
 
+URI="www.lwks.com/downloads"
+
 DESCRIPTION="LightWorks video editor software"
 HOMEPAGE="http://www.lwks.com/"
 SRC_URI="lwks-${PV}-amd64.deb"
 
-RESTRICT="fetch mirror"
+RESTRICT="fetch"
 
 LICENSE="as-is"
 SLOT="0"
@@ -35,6 +37,12 @@ RDEPEND="
 	"
 
 S="${WORKDIR}/"
+
+pkg_nofetch() {
+	einfo "Please download '${SRC_URI}' from:"
+	einfo "'${URI}'"
+	einfo "and move it to '${DISTDIR}'"
+}
 
 src_install() {
 	cp -R . "${D}"
