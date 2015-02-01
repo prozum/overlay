@@ -1,4 +1,3 @@
 prozum-overlay
 ==============
-
-prozum-overlay
+Prozum Gentoo overlay
