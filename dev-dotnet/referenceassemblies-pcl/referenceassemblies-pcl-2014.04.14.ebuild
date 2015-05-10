@@ -16,9 +16,10 @@ IUSE=""
 DEPEND="app-arch/unzip"
 RDEPEND="dev-lang/mono"
 
+S="${WORKDIR}/xamarin-referenceassemblies-pcl-upstream-${PV}/"
+
 src_unpack() {
-    mv ${A} ${A}.zip
-	unpack ${A}.zip
+    unpack xamarin-referenceassemblies-pcl-upstream-${PV}.zip
     cd "${S}"
 }
 
