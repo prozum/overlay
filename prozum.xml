@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+ 
+<repositories version="1.0">
+    <repo priority="50" quality="experimental" status="unofficial">
+        <name>prozum</name>
+        <description>ebuilds by prozum.</description>
+        <homepage>https://github.com/prozum/overlay</homepage>
+        <owner>
+            <email>nimoov@prozum.dk</email>
+        </owner>
+        <source type="git">https://github.com/prozum/overlay.git</source>
+    </repo>
+</repositories>
