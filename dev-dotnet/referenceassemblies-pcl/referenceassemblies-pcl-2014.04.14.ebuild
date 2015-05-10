@@ -4,8 +4,6 @@
 
 EAPI=5
 
-inherit eutils
-
 DESCRIPTION="Reference assemblies for portable class libraries(PCL)"
 HOMEPAGE="https://github.com/directhex/xamarin-referenceassemblies-pcl"
 SRC_URI="https://codeload.github.com/directhex/xamarin-referenceassemblies-pcl/zip/upstream/${PV}"
@@ -18,7 +16,7 @@ IUSE=""
 DEPEND="app-arch/unzip"
 RDEPEND="dev-lang/mono"
 
-S=${WORKDIR}/${PV}
+S=${WORKDIR}/xamarin-referenceassemblies-pcl-upstream-${PV}
 
 src_install() {
 	insinto /usr/lib/mono/xbuild-frameworks/.NETPortable/
