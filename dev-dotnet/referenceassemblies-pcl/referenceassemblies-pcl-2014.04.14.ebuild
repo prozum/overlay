@@ -16,6 +16,8 @@ IUSE=""
 DEPEND="app-arch/unzip"
 RDEPEND="dev-lang/mono"
 
+S=${WORKDIR}
+
 src_install() {
 	insinto /usr/lib/mono/xbuild-frameworks/.NETPortable/
 	doins v*
