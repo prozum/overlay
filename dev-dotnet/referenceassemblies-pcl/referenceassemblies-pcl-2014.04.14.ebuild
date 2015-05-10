@@ -16,7 +16,7 @@ IUSE=""
 DEPEND="app-arch/unzip"
 RDEPEND="dev-lang/mono"
 
-S=${WORKDIR}
+S="${WORKDIR}/xamarin-referenceassemblies-pcl-upstream-${pv}"
 
 src_install() {
 	insinto /usr/lib/mono/xbuild-frameworks/.NETPortable/
