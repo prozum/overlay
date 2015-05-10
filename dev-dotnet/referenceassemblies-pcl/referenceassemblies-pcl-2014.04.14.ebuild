@@ -17,7 +17,8 @@ DEPEND="app-arch/unzip"
 RDEPEND="dev-lang/mono"
 
 src_unpack() {
-    unpack ${A}
+    mv ${A} ${A}.zip
+	unpack ${A}.zip
     cd "${S}"
 }
 
