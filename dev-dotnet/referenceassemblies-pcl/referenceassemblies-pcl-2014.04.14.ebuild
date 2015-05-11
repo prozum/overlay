@@ -16,9 +16,12 @@ IUSE=""
 DEPEND="app-arch/unzip"
 RDEPEND="dev-lang/mono"
 
-S="${WORKDIR}/xamarin-referenceassemblies-pcl-upstream-${PV}/"
+S="${WORKDIR}/xamarin-referenceassemblies-pcl-upstream-${PV}"
 
 src_install() {
-	insinto /usr/lib/mono/xbuild-frameworks/.NETPortable/
-	doins v*
+    dodir /usr/lib/mono/xbuild-frameworks/.NETPortable/
+    mv "${S}/v4.0" "${D}/usr/lib/mono/xbuild-frameworks/.NETPortable/" || die "Install failed!"
+    mv "${S}/v4.5" "${D}/usr/lib/mono/xbuild-frameworks/.NETPortable/" || die "Install failed!"
+    mv "${S}/v4.6" "${D}/usr/lib/mono/xbuild-frameworks/.NETPortable/" || die "Install failed!"
+    dodoc readme.md
 }
