@@ -6,11 +6,11 @@ EAPI=5
 
 DESCRIPTION="Reference assemblies for portable class libraries(PCL)"
 HOMEPAGE="https://github.com/directhex/xamarin-referenceassemblies-pcl"
-SRC_URI="https://codeload.github.com/directhex/xamarin-referenceassemblies-pcl/zip/upstream/${PV} -> ${P}.zip"
+SRC_URI="https://codeload.github.com/directhex/xamarin-referenceassemblies-pcl/tar.gz/upstream/${PV} -> ${P}.tar.gz"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND="app-arch/unzip"
