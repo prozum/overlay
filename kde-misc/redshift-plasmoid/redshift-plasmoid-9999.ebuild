@@ -19,3 +19,7 @@ IUSE="debug"
 DEPEND="$(add_frameworks_dep plasma)"
 RDEPEND="${DEPEND}
 	x11-misc/redshift"
+
+KDE_BUILD_TYPE=release
+
+S="${WORKDIR}/redshift-plasmoid-plasma5-porting"

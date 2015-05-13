@@ -13,7 +13,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND="app-arch/unzip"
+DEPEND=""
 RDEPEND="dev-lang/mono"
 
 S="${WORKDIR}/xamarin-referenceassemblies-pcl-upstream-${PV}"
