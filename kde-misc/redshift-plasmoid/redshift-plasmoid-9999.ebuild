@@ -12,10 +12,10 @@ HOMEPAGE="http://kde-apps.org/content/show.php/Redshift+Plasmoid?content=148737 
 SRC_URI="https://codeload.github.com/simgunz/redshift-plasmoid/tar.gz/plasma5-porting"
 
 LICENSE="GPL-3"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 SLOT="5"
 IUSE="debug"
 
-DEPEND="$(add_kdebase_dep plasma)"
+DEPEND="$(add_frameworks_dep plasma)"
 RDEPEND="${DEPEND}
 	x11-misc/redshift"
