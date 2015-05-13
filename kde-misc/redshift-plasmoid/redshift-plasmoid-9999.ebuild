@@ -9,7 +9,7 @@ inherit kde5
 
 DESCRIPTION="Plasma plasmoid for redshift"
 HOMEPAGE="http://kde-apps.org/content/show.php/Redshift+Plasmoid?content=148737 https://github.com/simgunz/redshift-plasmoid/"
-SRC_URI="https://codeload.github.com/simgunz/redshift-plasmoid/tar.gz/plasma5-porting"
+SRC_URI="https://codeload.github.com/simgunz/redshift-plasmoid/tar.gz/plasma5-porting -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 KEYWORDS=""
